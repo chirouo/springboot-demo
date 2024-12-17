@@ -1,0 +1,17 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: springboo2_demo
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ca?useSSL=false&serverTimezone=UTC
+    username: root
+    password: 111111
+  jackson:
+    default-property-inclusion: non_null # JSON处理时忽略非空字段
+mybatis-plus:
+  type-aliases-package: com.gx.ca.mapper # 别名扫描包
+logging:
+  level:
+    com.gx.springboo2_demo: debug
